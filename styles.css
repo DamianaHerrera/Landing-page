@@ -1,0 +1,53 @@
+ @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Indie+Flower&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+:root{
+--navbar:#F4EDE4;
+--text-gray:#3c3c3c;
+--text-teracotta:#c97e6d;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    background: var(--navbar);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding:20px 20px;
+    }
+
+    .logo{
+     height: 100px;
+     
+    }
+
+
+.navbar,
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.navbar-list{
+    gap: 40px;
+}
+
+.navbar-list a{
+    color: var(--text-gray);
+    font-size: 18px;
+}
+
+
+
