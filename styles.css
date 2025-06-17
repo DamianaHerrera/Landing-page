@@ -3,7 +3,7 @@
 --navbar:#F4EDE4;
 --text-gray:#3c3c3c;
 --text-teracotta:#c97e6d;
-
+--background: #FCEFD9;
 }
 
 *{
@@ -16,19 +16,30 @@
 }
 
 header{
-    background: var(--navbar);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding:20px 20px;
+    height: 80px;
+    padding:0px 50px;
+    box-shadow: #F4EDE4 0px 20px 25px;
+   }
+
+.logo-container{
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
 
-    .logo{
-     height: 100px;
-     
+.offimood{
+        font-size: 18px;
+        color: var(--text-gray);
+        font-weight: 600;
     }
+
+.logo{
+     width: 50px;
+     }
 
 
 .navbar,
@@ -38,6 +49,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-right: 30px;
+   
 }
 
 .navbar-list{
@@ -49,5 +61,113 @@ header{
     font-size: 18px;
 }
 
+main{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+color: #3c3c3c;
+width: 100%;
+}
+
+#hero {
+    background-color: var(--background);
+    width: 100%;
+    margin-top: 50px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60%;
+    
+}
+
+.hero-info h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--text-gray);
+}
+
+.hero-info p {
+    font-size: 20px;
+    color: var(--text-gray);
+  
+}
+
+.hero-bottom {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--text-gray);
+}
+
+.btn-prod{
+    background-color: var(--text-gray);
+    color: white;
+}
+
+.btn-info{
+    background-color: transparent;
+    color: var(--text-gray);
+}
+
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: auto;
+}
+ 
+
+#hero-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px;
+   
+  }
+
+.hero-about-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-about-info h2{
+    font-size: 40px;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+  }
+
+  .hero-about-info p{
+    font-size: 20px;
+    color: var(--text-gray);
+    text-align: center;
+    max-width: 600px;
+  }
