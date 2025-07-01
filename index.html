@@ -3,6 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="mediqueries.css">
+   <link rel="stylesheet" href="animaciones.css">
+   
     <title>OffiMOOD</title>
     
 </head>
@@ -14,21 +17,31 @@
       </div>
         
         <nav class="navbar">
-            <ul class="navbar-list">
-               <li><a href="#">Home Office</a></li>
-               <li><a href="#">Promociones</a></li>
-               <li><a href="#">Servicios</a></li>
-               <li><a href="#">Contacto</a></li>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+           
+
+             <ul class="navbar-list">
+               <li><a href="#hero">Inicio</a></li>
+               <li><a href="#info">Productos</a></li>
+               <li><a href="#contact">Contacto</a></li>
              </ul>
+            
+           
          </nav>
+
     </header>
 
     <main>
     <section id="hero">
         <div class="hero-info-group">
           <div class="hero-info">
-            <h1>Tu oficina en casa</h1>
-            <p>Encuentra muebles y soluciones para tu espacio de trabajo en casa.</p>
+            <h1>Transformá tu espacio.Inspirá tu trabajo</h1>
+            <p>Descubre muebles de oficina y home office que combinan diseño, confort y funcionalidad para potenciar tu productividad.</p>
           </div>
         <div class="hero-bottom">
            <a href="#" class="btn btn-prod">Ver productos</a>
@@ -40,11 +53,76 @@
     </div>
 </section>
         <section id="hero-about">
-        <div class="hero-about-info">
-            <h2>Sobre nosotros</h2>
-            <p>En <strong>OffiMOOD</strong> ofrecemos una amplia variedad de muebles de oficina pensados para mejorar tu comodidad y productividad.Creemos en la funcionalidad con estilo y en crear espacios que inspiren cada dia.</p>
-        </div>
+        
+            <p><strong>OffiMOOD</strong> nace con la misión de transformar los espacios de trabajo en lugares funcionales, cómodos y con identidad propia. Nos especializamos en el diseño y comercialización de mobiliario para oficinas modernas, con foco en la ergonomía, el estilo y la eficiencia.</p>
+        
     </section>
+    <section id="info">
+        <h2>Inspirá tu espacio con nuestros productos</h2>
+        <div class="info-cards-container">
+            <div class="info-card">
+               <img src="/assets/img/flaticon//layout.png" alt="">
+               <h3>Diseño de Espacios</h3>
+               <p>Te ayudamos a planificar y visualizar tu espacio ideal,
+                optimizando cada rincon para maxima funcionalidad y estilo.</p>
+            </div>
+            <div class="info-card">
+                <img src="/assets/img/flaticon/transporte.png" alt="">
+                <h3>Entrega y Armado</h3>
+                <p>Nos encargamos del transporte y armado de tus muebles para que no tengas que preocuparte por nada.</p>
+            </div>
+            <div class="info-card">
+                <img src="/assets/img/flaticon//user.png" alt="">
+                <h3>Asesoramiento personalizado</h3>
+                <p>Nuestos asesores te guiarán para encontrar las mejores soluciones que se adapten a tus necesidades y presupuesto.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Ponete en Contacto</h2>
+         <div class="contact-flex">
+        <div class="contact-container">
+            <div class="contact-info">
+               <img src="/assets/img/flaticon/ubicacion.png" alt=""> 
+               <h3>Nuestra Oficina</h3>
+               <p>Espacio OffiMood, Calle Ergonomía y Estilo, Argentina</p>
+            </div>
+            <div class="contact-info">
+                <img src="/assets/img/flaticon/llamar.png" alt="">
+                <h3>Llamános</h3>
+                <p>(123)456-7890</p>
+            </div>
+            <div class="contact-info">
+                <img src="/assets/img/flaticon/sobre.png" alt="">
+                <h3>Escribinos</h3>
+                <p>contacto@offimood.com</p>
+            </div>
+            
+        </div>
+            <div>
+                <img src="/assets/img/imagen.jpg" alt="Imagen de contacto" class="img-contact">
+            </div>
+   
+        </div>
+
+    </section>
+    <footer class="footer">
+       <p class="offimood">OffiMOOD</p>
+       <p class="footer-text">Todos los derechos reservados.</p>
+       <div>
+        <ul class="footer-links">
+                <li><a href="#"><img src="/assets/img/flaticon/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="/assets/img/flaticon/whatsapp.png" alt="WhatsApp"></a></li>
+                <li><a href="#"><img src="/assets/img/flaticon/instagram.png" alt="Instagram"></a></li>
+            </ul>
+       </div>
+            
+
+    </footer>
 </main>
     
 </body>

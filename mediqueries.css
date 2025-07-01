@@ -1,0 +1,79 @@
+@media (max-width: 992px) {
+
+    .hero-info {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+    .hero-info h1 {
+        display: block;
+       width: 90%;
+     }
+
+     .hero-info p {
+        max-width: 60%;
+        font-size: 25px;
+     }
+
+     .hero-bottom {
+        justify-content: center;
+     }
+
+     .hero-image {
+        display: none;
+     }
+
+    .info-cards-container {
+        flex-direction: column;
+        width: 100%;
+      }
+
+    .info-card {
+      margin: 0 auto;
+    }
+
+    .contact-container {
+       width: 100%;
+       text-align: center;
+       align-items: center;
+    }
+
+    .img-contact {
+        display: none; 
+      }
+}
+
+@media (max-width: 576px) {
+
+   .navbar-list {
+      width: 100%;
+      height: calc(100vh - 70px);
+      position: absolute;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(200%);
+      transition: all .4s ease;
+   }
+
+   .menu-label span{
+      display: block;
+    }  
+
+   #menu-toggle:checked ~ .navbar-list {
+      transform: translateX(0%);
+    }
+
+   #hero-about p {
+      width: 80%;
+      line-height: 20px;
+   }
+
+   #info h2 {
+   text-align: center;
+   }
+
+    
+}

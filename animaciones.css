@@ -1,0 +1,55 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+
+#menu-toggle:checked ~ .menu-label span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg);
+}
+
+#menu-toggle:checked ~ .menu-label span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-label span:nth-child(3) {
+  position: absolute;
+    top: 0;
+    transform: rotate(225deg);
+}
+
+#menu-toggle:checked ~ .navbar-list {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}   
+
+ 
+header {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.btn-prod:hover {
+    background-color: white;
+    color: var(--text);
+    transform: translate(-0.25rem, -0.25rem);
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-info:hover {
+    background-color: var(--text);
+    color: white;
+    transform: translate(-0.25rem, -0.25rem);
+    transition: all 0.15s ease-in-out;
+}
+
+.info-card:hover{
+    cursor: pointer;
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 0px 20px 1px #0808083f;
+    border: 1px solid rgba(8, 8, 8, 0.454);
+    transition: all 0.15s ease-in-out;
+}
